@@ -21,4 +21,3 @@ $(".ajax-link").click(function(e) {
 	});	
 	resize();
 })
-
