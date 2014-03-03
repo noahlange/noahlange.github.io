@@ -3,6 +3,7 @@ body {
 	color:#fff;
 	background-color:#000;
 	font-family:"Helvetica Neue";
+	overflow:scroll;
 }
 
 p {
@@ -10,7 +11,7 @@ p {
 }
 
 #main-container {
-	background: url("../img/bg.jpg") no-repeat top right fixed #000;
+	background: url("../img/bg.jpg") no-repeat 700px 0px fixed #000;
 }
 
 .ajax-link:hover {
