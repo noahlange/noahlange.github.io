@@ -8,7 +8,16 @@ $(window).load(function(){
 });
 
 function resize() {
-	$("#main-container").height( $(window).minheight() - 75)
+
+	windowHeight = $(window).height()
+	containerHeight = $("#main-container").height()
+	
+	if (windowHeight > containerHeight) {
+		$("#main-container").height( $(window).height() - 75)
+	}
+	else {
+		$("#main-container").height( $("#main-container").height())
+	}
 }
 
 $(".ajax-link").click(function(e) {
