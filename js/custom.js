@@ -9,6 +9,8 @@ $(window).load(function(){
 
 function resize() {
 
+	var windowHeight = $(window).height();
+
 	$("#main-container").style.minHeight=windowHeight-75 + "px";
 	$("#main-container").style.height="auto";
 }
