@@ -9,15 +9,8 @@ $(window).load(function(){
 
 function resize() {
 
-	windowHeight = $(window).height()
-	containerHeight = $("#main-container").height()
-	
-	if (windowHeight > containerHeight) {
-		$("#main-container").height( $(window).height() - 75)
-	}
-	else {
-		$("#main-container").height( $("#main-container").height())
-	}
+	$("#main-container").style.minHeight=windowHeight-75 + "px";
+	$("#main-container").style.height="auto";
 }
 
 $(".ajax-link").click(function(e) {
