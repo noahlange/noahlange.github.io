@@ -11,8 +11,8 @@ function resize() {
 
 	var windowHeight = $(window).height();
 
-	$("#main-container").style.minHeight=windowHeight-75 + "px";
-	$("#main-container").style.height="auto";
+	document.getElementById("main-container").style.minHeight=windowHeight-75 + "px";
+	document.getElementById("#main-container").style.height="auto";
 }
 
 $(".ajax-link").click(function(e) {
