@@ -2,7 +2,7 @@ body {
 	padding-top: 75px;
 	color:#fff;
 	background-color:#000;
-	font-family:"Helvetica Neue";
+	font-family:"Lato","Helvetica Neue";
 	overflow:scroll;
 }
 
@@ -16,4 +16,18 @@ p {
 
 .ajax-link:hover {
 	cursor:pointer;
+}
+
+.btn [class^="icon-"],
+.nav [class^="icon-"],
+.btn [class*=" icon-"],
+.nav [class*=" icon-"] {
+	color:#999;
+}
+
+.btn [class^="icon-"]:hover,
+.nav [class^="icon-"]:hover,
+.btn [class*=" icon-"]:hover,
+.nav [class*=" icon-"]:hover {
+	color:#fff;
 }
