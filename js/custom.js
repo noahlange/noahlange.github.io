@@ -28,6 +28,7 @@ var chicagoPlaylist = [
         mp3:'files/the-road.mp3',
         title:'The Road',
         artist:'Noah Lange',
+        album:'Chicago',
         buy:'http://bandcamp.com/noahlange',
         price:'1',
         duration:'2:42',
@@ -37,6 +38,7 @@ var chicagoPlaylist = [
         mp3:'files/chicago-pt-i.mp3',
         title:'Chicago, Pt. I',
         artist:'Noah Lange',
+        album:'Chicago',
         buy:'http://bandcamp.com/noahlange',
         price:'1',
         duration:'3:46',
@@ -46,6 +48,7 @@ var chicagoPlaylist = [
         mp3:'files/twenty-second-century-blues.mp3',
         title:'22nd Century Blues',
         artist:'Noah Lange',
+        album:'Chicago',
         buy:'http://bandcamp.com/noahlange',
         price:'1',
         duration:'3:12',
@@ -55,6 +58,7 @@ var chicagoPlaylist = [
         mp3:'files/rosie-holden.mp3',
         title:'Rosie Holden',
         artist:'Noah Lange',
+        album:'Chicago',
         buy:'http://bandcamp.com/noahlange',
         price:'1',
         duration:'6:12',
@@ -64,6 +68,7 @@ var chicagoPlaylist = [
         mp3:'files/chicago-pt-ii.mp3',
         title:'Chicago, Pt. II',
         artist:'Noah Lange',
+        album:'Chicago',
         buy:'http://bandcamp.com/noahlange',
         price:'1',
         duration:'1:56',
@@ -72,14 +77,16 @@ var chicagoPlaylist = [
 ];
 
 $(document).ready(function(){
-	var description = 'This extended play was written and recorded over the course of January and February 2014 at Luther College in Decorah, Iowa.';
-
 	$('#music-player').ttwMusicPlayer(chicagoPlaylist, {
-		autoPlay:false, 
-		description:description,
+		autoPlay:false,
 		jPlayer:{
 			swfPath:'jquery-jplayer/' //You need to override the default swf path any time the directory structure changes
 		}
 	});
+	toggleTracks();
 });
+
+function toggleTracks() {
+	$('#lowerSection').slideToggle();
+}
 
