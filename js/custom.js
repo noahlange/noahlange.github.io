@@ -23,7 +23,7 @@ $(".ajax-link").click(function(e) {
 	initMusicPlayer();
 })
 
-var myPlaylist = [
+var chicagoPlaylist = [
 
 	{
         mp3:'files/the-road.mp3',
@@ -73,14 +73,16 @@ var myPlaylist = [
 ];
 
 function initMusicPlayer() {
+
 	var description = 'This extended play was written and recorded over the course of January and February 2014 at Luther College in Decorah, Iowa.';
 
-	$('#music-player').ttwMusicPlayer(myPlaylist, {
+	$('#music-player').ttwMusicPlayer(chicagoPlaylist, {
 		autoPlay:false, 
 		description:description,
 		jPlayer:{
-			swfPath:'../plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+			swfPath:'/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
 		}
 	});
+	
 };
 
