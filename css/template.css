@@ -11,7 +11,7 @@ p {
 }
 
 #main-container {
-	background: url("../img/bg.jpg") no-repeat 700px 0px fixed #000;
+	background: url("../images/bg.jpg") no-repeat 700px 0px fixed #000;
 }
 
 .ajax-link:hover {
@@ -34,4 +34,25 @@ p {
 
 .lyrics {
 	color:#000;
+}
+
+#music-player {
+	padding:1em;
+	margin:0 auto;
+	background-color:rgba(50,50,50,0.8);
+	border-radius:1em;
+	width:400px;
+}
+
+#music-player #download{
+    position:absolute;
+    top:132px;
+    left:30px;
+    text-decoration:none;
+    font-size:12px;
+    color:#999;
+}
+
+#music-player #download:hover{
+    color:#fff;
 }
