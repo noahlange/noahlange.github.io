@@ -43,17 +43,8 @@ p {
 	border-radius:1em;
 	width:256;
 	position:fixed;
-	right:0;
-	bottom:0;
-}
-
-#music-player #download{
-    position:absolute;
-    top:132px;
-    left:30px;
-    text-decoration:none;
-    font-size:12px;
-    color:#999;
+	right:16px;
+	bottom:16px;
 }
 
 #music-player #download:hover{
