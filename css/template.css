@@ -41,7 +41,10 @@ p {
 	margin:0 auto;
 	background-color:rgba(50,50,50,0.8);
 	border-radius:1em;
-	width:400px;
+	width:256;
+	position:fixed;
+	right:0;
+	bottom:0;
 }
 
 #music-player #download{
