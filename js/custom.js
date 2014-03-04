@@ -71,17 +71,15 @@ var chicagoPlaylist = [
     },
 ];
 
-$(document).load(function() {
-
+$(document).ready(function(){
 	var description = 'This extended play was written and recorded over the course of January and February 2014 at Luther College in Decorah, Iowa.';
 
 	$('#music-player').ttwMusicPlayer(chicagoPlaylist, {
 		autoPlay:false, 
 		description:description,
 		jPlayer:{
-			swfPath:'/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+			swfPath:'jquery-jplayer/' //You need to override the default swf path any time the directory structure changes
 		}
 	});
-	
 });
 
