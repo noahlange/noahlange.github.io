@@ -20,6 +20,7 @@ $(".ajax-link").click(function(e) {
 		$("#main-container").html(data);
 	});	
 	resize();
+	initMusicPlayer();
 })
 
 var myPlaylist = [
@@ -71,7 +72,7 @@ var myPlaylist = [
     },
 ];
 
-$(document).ready(function(){
+function initMusicPlayer() {
 	var description = 'This extended play was written and recorded over the course of January and February 2014 at Luther College in Decorah, Iowa.';
 
 	$('#music-player').ttwMusicPlayer(myPlaylist, {
