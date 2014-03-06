@@ -10,6 +10,10 @@ p {
 	text-align:justify;
 }
 
+.modal-title {
+	color:#000;
+}
+
 #main-container {
 	background: url("../images/bg.jpg") no-repeat 700px 0px fixed #000;
 }
