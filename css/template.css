@@ -1,7 +1,6 @@
 h1,h2,h3,h4,h5,h6 {
 	font-family: "Lato";
 	text-transform:uppercase;
-	font-weight:300;
 }
 
 footer {
@@ -16,13 +15,11 @@ footer {
 
 .lead {
 	font-family: "Lato";
-	font-weight:300;
 }
 
 .nav-list > li > a > h1 {
 	font-size:24pt;
 	margin-top:0;
-	font-weight: 100;
 }
 
 .text-light {
@@ -35,16 +32,19 @@ footer {
 	clear:both;
 }
 
-.ajax-link {
+.sub-list {
+	padding-left:1em;
+	font-size:smaller;
+}
+
+.ajax-link, .faux-link {
 	line-height:2em;
-	font-weight:300;
 	color:#000;
-	padding-left:0em;
 	-webkit-transition: padding 250ms ease-in-out;
 }
 
-.ajax-link:hover {
-	padding-left: .5em;
+.ajax-link:hover, .faux-link:hover {
+	cursor:pointer;
 	-webkit-transition: all 250ms ease-in-out;
 	text-decoration:none;
 	color:#d9230f;
