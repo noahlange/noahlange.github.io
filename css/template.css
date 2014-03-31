@@ -50,6 +50,16 @@ footer {
 	color:#d9230f;
 }
 
+.brand:hover {
+	text-decoration:none;
+}
+
+.brand:hover h1 {
+	-webkit-transition: all 250ms ease-in-out;
+	text-decoration:none;
+	color:#d9230f;
+}
+
 html {
 	margin:0 auto;
 	height:100%;
