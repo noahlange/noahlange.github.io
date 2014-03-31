@@ -7,6 +7,10 @@ $(window).load(function(){
 		}		
 });
 
+$(document).ready(function() {
+	$(".fancybox").fancybox();
+});
+
 function resize() {
 	var windowHeight = $(window).height();
 	document.getElementById("content").style.minHeight=windowHeight-75 + "px";
